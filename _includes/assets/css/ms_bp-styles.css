@@ -1,0 +1,80 @@
+/* ms_bp-styles.css (mangata.studio boilerplate) */
+
+
+
+
+
+
+
+
+
+
+/* noted from : https://mattbrictson.com/blog/css-normalize-and-reset#my-recommendation */
+
+/* TODO : Move this to reset.css */
+/* TODO : Move this to reset.css */
+/* TODO : Move this to reset.css */
+@import "modern-normalize";
+
+
+
+
+/* 
+The default line-height provided by browsers (and retained by modern-normalize) is 1.15, which is much too small. 
+This value might work for extremely large headlines or narrow UI labels, but not for most use-cases.
+As Josh Comeau points out in his CSS reset article, WCAG criteria states that line-height should be at least 1.5. I agree!
+*/
+:root {
+  line-height: 1.5;
+}
+
+html { box-sizing: border-box; }
+
+/* not always necessary */
+*, *:before, *:after { box-sizing: inherit; }/* not always necessary */
+/* not always necessary */
+img { box-sizing: content-box; }
+
+/*
+Paragraphs and headings are some of the mos commonly used elements when building web apps. 
+After all, user interfaces have quite a lot of text. In practice, 
+I find that I am always fighting against the default margins of these elements.
+*/
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+/* if we want styling on these we'll ask for styling on these, thanks */
+ol, ul {
+  list-style: none;
+  padding-inline: 0;
+}
+
+/*
+Headings define the document outline of a page, and are important for accessibility. 
+The title of the page should be an <h1>, the next important heading in the hierarchy of the page should be an <h2>, and so on.
+However, when designing UIs and layouts, the most important heading is not always a consistent size from page to page. 
+And depending on the font, bold might not always be the desired weight.
+*/
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Modern phones have 2x and 3x hi-dpi displays. 
+That means an area of the page measured as 300px in CSS, for example, will need 600 or 900 device pixels worth of image data to look nice and crisp. 
+In other words, I often find that I need to “squeeze” large images into smaller spaces.
+However, the default browser <img> styling will result in a large image simply overflowing, which is not desirable.
+*/
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+/* TODO : Move this to reset.css */
+/* TODO : Move this to reset.css */
+/* TODO : Move this to reset.css */
+
+body {
+    background-color: aqua;
+}
